@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Gatsby Demo Starter for Queen Raae",
+  "author": "@raae",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@raae/gatsby-plugin-svg-emoji-favicon": "^0.1.5",
+    "gatsby": "5.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.8.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}

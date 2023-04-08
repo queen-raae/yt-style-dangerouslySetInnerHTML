@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-[#fffaf0];
+  @apply border-t-[#ff5722] border-t-4;
+  @apply p-10 md:p-16 lg:p-20;
+}
