@@ -15,7 +15,7 @@ export default function SearchResults({ term }) {
   }, [term]);
 
   return (
-    <ul className="space-y-3">
+    <ul className="space-y-3 [&_em]:bg-yellow-300">
       {results.map((item) => {
         return (
           <li key={item.name}>
