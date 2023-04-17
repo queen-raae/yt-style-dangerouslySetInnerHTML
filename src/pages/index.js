@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import useSiteMetadata from "../useSiteMetadata";
+import SearchResults from "../components/search-results";
 
 export function Head() {
   const { title } = useSiteMetadata();
@@ -12,6 +13,8 @@ export function Head() {
 
 export default function IndexPage() {
   const { title, description, emoji } = useSiteMetadata();
+  const [term, setTerm] = useState("");
+
   return (
     <main className="space-y-4">
       <header className="space-y-3">
@@ -20,11 +23,25 @@ export default function IndexPage() {
         </h1>
         <p>{description}</p>
       </header>
-      <p>
-        <a className="underline text-purple-800" href="/api/hello">
-          Go to Gatsby Function `hello`
-        </a>
-      </p>
+
+      <form className="space-x-2">
+        <span>Search for:</span>
+        {["olso", "alez"].map((item) => {
+          return (
+            <button
+              type="button"
+              key={item}
+              disabled={item === term}
+              className={item === term ? "bg-yellow-300" : "underline"}
+              onClick={() => setTerm(item)}
+            >
+              {item}
+            </button>
+          );
+        })}
+      </form>
+
+      <SearchResults term={term} />
     </main>
   );
 }

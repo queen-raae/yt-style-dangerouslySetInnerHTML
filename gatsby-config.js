@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Awesome Demo`,
-    description: `One demo to rule them all`,
+    title: `Style dangerouslySetInnerHTML`,
+    description: `Demo to showcase how to style dangerouslySetInnerHTML`,
   },
   plugins: [
     {
       resolve: "@raae/gatsby-plugin-svg-emoji-favicon",
       options: {
-        emoji: "🎉",
+        emoji: "💅",
       },
     },
   ],
